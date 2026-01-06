@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jennifer Dacayana | Portfolio</title>
+  <style>
+    :root {
+      --primary: #1f2933;
+      --secondary: #4f8cff;
+      --accent: #22c55e;
+      --bg-light: #f9f9f9;
+      --text-dark: #333;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background-color: var(--bg-light);
+    }
+
+    header {
+      background: var(--primary);
+      color: #ffffff;
+      padding: 60px 20px;
+    }
+
+    .hero {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1 1 500px;
+    }
+
+    .hero-image {
+      flex: 1 1 250px;
+      text-align: right;
+    }
+
+    .hero-image img {
+      max-width: 320px;
+      border-radius: 50%;
+      border: 4px solid #ffffff;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    .cta-buttons {
+      margin-top: 20px;
+    }
+
+    .cta-buttons a {
+      display: inline-block;
+      margin-right: 12px;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: bold;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .btn-primary {
+      background: #ffffff;
+      color: var(--primary);
+    }
+
+    .btn-outline {
+      border: 1px solid #ffffff;
+      color: #ffffff;
+    }
+
+    .cta-buttons a:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: #ffffff;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    section:hover {
+      box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .skills, .tools {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    /* Hover effects for lists (corporate but polished) */
+    li {
+      margin-bottom: 10px;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    li:hover {
+      transform: translateX(6px);
+      color: var(--secondary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    
+    /* Back to Top Button */
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--secondary);
+      color: #ADFF2F;
+      border: none;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 999;
+    }
+
+    #backToTop:hover {
+      transform: translateY(-4px);
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Jennifer E. Dacayana</h1>
+        <p>Inventory Associate | Administrative Support | Asset & Data Management</p>
+        <div class="cta-buttons">
+          <a href="#experience" class="btn-primary">View Experience</a>
+	  <a href="#achivements" class="btn-outline">Achivements</a>
+ 	<a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Replace profile.jpg with your actual image file -->
+        <img src="profile.png" alt="Jennifer Dacayana Profile Photo" />
+
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a detail-oriented Inventory Associate with experience in asset management,
+      equipment deployment, administrative support, and data coordination. With a
+      Bachelor of Science in Information Technology majoring in Web Development, I
+      combine technical knowledge with organized, process-driven work. I value
+      accuracy, teamwork, and continuous improvement.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>What I Do Best</h2>
+    <div class="skills">
+      <ul>
+        <li>Inventory & Asset Tracking</li>
+        <li>Equipment Deployment & Coordination</li>
+        <li>Administrative & Virtual Assistance</li>
+      </ul>
+      <ul>
+        <li>Data Entry, Auditing & Reporting</li>
+        <li>Process Improvement & Documentation</li>
+        <li>Professional Communication</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="tools">
+    <h2>Tools & Technologies</h2>
+    <div class="tools">
+      <ul>
+        <li>MS Excel (Advanced)</li>
+        <li>Google Sheets & Google Workspace</li>
+        <li>CRM Systems</li>
+      </ul>
+      <ul>
+        <li>Canva (Graphic Design)</li>
+        <li>Communication Applications (Zoom and Skype)</li>
+        <li>Cloud-based customer service and engagement platform </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Professional Experience</h2>
+
+    <h3>Inventory Associate — Enshored Inc.</h3>
+    <ul>
+      <li>Managed end-to-end inventory processes including issuance, return, and transfer of company assets.</li>
+      <li>Coordinated on the equipment deployment for new hires with pre-deployment quality checks.</li>
+      <li>Conducted mid-year and year-end physical inventories.</li>
+      <li>Implemented barcode scanning integrated with Google Sheets, reducing manual errors.</li>
+      <li>Prepared weekly and monthly inventory reports for management review.</li>
+      <li>Verified equipment warranty status and arranged temporary replacements.</li>
+      <li>Collaborated with IT, HR, and Operations teams for onboarding and offboarding.</li>
+    </ul>
+
+    <h3>Asset Controller Analyst & Vendor Management — Nityo Infotech Services Philippines Inc.</h3>
+    <ul>
+      <li>Received, inspected, tested, tagged, and tracked compnay assets across their full lifecycle.</li>
+      <li>Coordinated maintenance, asset retirement, and PEZA-compliant disposal procedures.</li>
+      <li>Worked with vendors on procurement, contract negotiation, and issue resolution.</li>
+      <li>Supported budgeting, lifecycle planning, and vendor evaluations.</li>
+      <li>Facilitated purchase requisitions and purchase orders.</li>
+      <li>Served as primary point of contact for vendor and client communications.</li>
+    </ul>
+
+    <h3>Operations Secretary — Pyrotech Solution Integrated Services Corporation</h3>
+    <ul>
+      <li>Provided administrative and operational support for daily office activities.</li>
+      <li>Handled meeting schedules, documentation, and report management.</li>
+      <li>Coordinated with departments to track project updates and inventory movement.</li>
+      <li>Prepared presentations, meeting minutes, and monthly reports.</li>
+      <li>Supported logistics and supply tracking to maintain efficient workflows.</li>
+    </ul>
+  </section>
+
+<section id="achivements">
+    <h2>Key Achievements</h2>
+    <ul>
+      <li>Developed an accurate Asset Tracking System to monitor units
+from deployment to return (asset movements), and ensuring full
+visibility throughout the asset lifecycle.
+Created a Consolidated Asset Report to</li>
+      <li>Created a Consolidated Asset Report to track location, acquisition
+and deployment dates, and current status, supporting better
+inventory decisions (excel file for manual record).</li>
+      <li>Designed and implemented standardized procedures for asset
+incident reporting and file transfer waivers to streamline
+accountability and documentation.</li>
+      <li>Enhanced the employee offboarding tracker, improving asset
+recovery and documentation during exit processes</li>
+      <li>Developed and implemented a barcode scanning process using a
+smartphone to streamline inventory recording.</li>
+    </ul>   </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>Bachelor of Science in Information Technology</strong><br />
+    Major in Web Development<br />
+    Phinma - Cagayan de Oro College<br /></p>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications & Training</h2>
+    <ul>
+      <li>Graphic Design with Canva & Social Media Management — Kurso.Ph</li>
+      <li>Mastering Power BI for Data Driven Decision</li>
+      <li>SAP ERP Essential Training</li>
+      <li>Artificial Intelligence for Communities
+Workshop</li>
+      <li>Cybersecurity Foundations/li>
+      <li>EXCEL Analysis (MICROSOFT EXCEL)</li>
+      <li>Develop Customer - Service Skills Build
+Business English Skills as a Non-Native Speaker</li>
+      <li> Freelancing Course Training and Coaching,
+Filipino Virtual Assistance Academy Customer
+Experience Fundamentals</li>
+    </ul>
+  </section>
+
+  <section id="values">
+    <h2>Work Values</h2>
+    <ul>
+      <li>Accuracy and attention to detail</li>
+      <li>Team collaboration and accountability</li>
+      <li>Clear and respectful communication</li>
+      <li>Continuous learning</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you'd like to connect or request my resume, feel free to reach out.</p>
+    <ul>
+      <li>Email: dacayanajennifer24@gmail.com</li>
+      <li>LinkedIn: https://www.linkedin.com/in/jennifer-dacayana-783896272</li>
+      <li>Contact Number: 0945 458 1565</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2026 Jennifer Dacayana · Resume, references, and work samples available upon request</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Back to top">↑</button>
+
+<script>
+    const sections = document.querySelectorAll('section');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    sections.forEach(section => observer.observe(section));
+      
+    // Back to Top functionality
+    const backToTopBtn = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        backToTopBtn.style.display = 'flex';
+      } else {
+        backToTopBtn.style.display = 'none';
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+</body>
+</html>
